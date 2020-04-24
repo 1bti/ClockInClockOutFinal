@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Clocker">
+
+    <ListView
+
+        android:id="@+id/list"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp">
+
+    </ListView>
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        app:srcCompat="@drawable/download" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="150dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="32dp"
+        android:text="Multiple Jobs?" />
+
+    <Button
+        android:id="@+id/clockInBtn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/logoView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#DFA92B"
+        android:shadowRadius="50.09"
+        android:text="Clock In" />
+
+    <Button
+        android:id="@+id/clockOutBtn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/clockInBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#DFA92B"
+        android:shadowRadius="50.09"
+        android:text="Clock Out" />
+
+    <Button
+        android:id="@+id/logOutBtn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginBottom="21dp"
+        android:text="Log Out" />
+
+
+</RelativeLayout>
